@@ -33,7 +33,7 @@ The visualizations in this project comprehensively illustrate the business narra
 - Charts on Business Performance Impacts
 # Key Insights 📝 
 Everything Relies On Data Quality 
-The Biggest Takeaway Was That Data Preparation Took Over 60% Of Our Project Time. Real Data Isn'T Clean — It Has Inconsistent Formats, Duplicate Records, Missing Values, And Inconsistencies That Wouldn'T Occur In Examples From A Textbook.
+The Biggest Takeaway Was That Data Preparation Took Over 60% Of Our Project Time. Real Data Isn'T Clean It Has Inconsistent Formats, Duplicate Records, Missing Values, And Inconsistencies That Wouldn'T Occur In Examples From A Textbook.
 
 Visual Exploration Promotes Insight
 Generating Plots Early In The Work Encouraged Us To Ask Better Questions And Recognize Patterns That We May Have Overlooked Had We Been Working Through The Numbers Exclusively. Graphs Became Our Guide To Follow And Take A Deeper Dive Into.
@@ -59,5 +59,35 @@ Team Coordination In Data Science Our Previous Sql Project Was Much Less Collabo
 2. Experiment and Adapt Conduct controlled tests with annual evaluations to adjust to evolving customer trends.
 
 3. Safeguard Premium Brand  Limit discounts on Apple premium products to 0-10% to uphold ENIAC's reputation as a trusted premium tech reseller.
- # Repository  🃏
 
+# Repository :alembic:  
+```
+eniac-discount-strategy-analysis/
+├── README.md                          # This story
+├── data/
+│   ├── raw/                          # Original messy CSV files
+│   │   ├── brands.csv
+│   │   ├── orders_qu.csv
+│   │   ├── products_cl.csv
+│   │   └── orderlines_qu.csv
+│   └── cleaned/                      # Processed and joined data
+│       └── orderlines_qu.csv
+|       └── orders_qu.csv
+|       └── products_qu.csv
+|       └── revenue_per_orders.csv
+|       └── orders_avg_diff_paid_no_outliers.csv 
+├── notebooks/                        # Our analytical journey
+│   ├── 01_data_cleaning_with_pandas_solutions.ipynb
+│   ├── 02_quality_assessment_solution.ipynb
+│   └── 03_category_creation_solution.ipynb
+|   └── 4_joinning_products_orders_orderlines.ipynb
+|   └── 5_main_analysis.ipynb
+|   └── Vennel_exploration.ipynb 
+├── visualizations/ exploratory plots    # The charts that told the story
+│   ├── discount_revenue_orders.png
+│   ├── revenue_per_category.png
+│   └── discount_revenue_time.png
+├── presentation/                     # Final business presentation
+│   └── ENIAC_Discount_Strategy_Analysis.pdf
+└── requirements.txt                  # Python dependencies
+```
